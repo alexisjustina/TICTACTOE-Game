@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+  .board__box {
+    width: 100px;
+    height: 90px;
+  }
+}
+/*# sourceMappingURL=queries.css.map */

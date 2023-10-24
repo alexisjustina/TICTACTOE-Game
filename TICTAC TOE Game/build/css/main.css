@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #f74c36;
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 40px;
+}
+
+.play-btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  border: 4px solid yellow;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: inherit;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 2;
+}
+
+.board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  position: absolute;
+}
+
+.board .board__box {
+  width: 130px;
+  height: 120px;
+  background-color: #8814e7;
+  border: 1.3px dashed white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .board .board__box {
+    width: 100px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 800px) {
+  .board .board__box {
+    width: 150px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 414px) {
+  .board .board__box {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.ending {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.ending .ending__text {
+  font-size: 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ending .ending__playAgain-btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  border: 4px solid yellow;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: inherit;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 0;
+}
+/*# sourceMappingURL=main.css.map */
